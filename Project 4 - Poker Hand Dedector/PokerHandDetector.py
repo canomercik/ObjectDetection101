@@ -8,7 +8,8 @@ cap = cv2.VideoCapture(0)  # For Webcam
 cap.set(3, 1280)
 cap.set(4, 720)
 
-model = YOLO("playingCards.pt")
+model = YOLO('playingCards.pt')
+
 classNames = ['10C', '10D', '10H', '10S',
               '2C', '2D', '2H', '2S',
               '3C', '3D', '3H', '3S',
@@ -57,21 +58,3 @@ while True:
 
     cv2.imshow('Image', img)
     cv2.waitKey(1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
